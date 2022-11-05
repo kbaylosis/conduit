@@ -38,6 +38,7 @@ dart analyze
 6. Repeat steps 3-5 as needed. Adjust code manually to comply with the aqueduct and conduit differences
 
 7. Migrate code to null-safety
+
 ```dart migrate```
 
 
