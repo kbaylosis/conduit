@@ -41,4 +41,7 @@ dart analyze
 
 ```dart migrate```
 
+8. Run this on your existing database:
+
+```alter table _aqueduct_version_pgsql rename to _conduit_version_pgsql;```
 
