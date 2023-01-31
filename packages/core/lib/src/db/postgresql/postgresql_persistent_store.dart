@@ -125,6 +125,7 @@ class PostgreSQLPersistentStore extends PersistentStore
           _databaseConnection = conn;
           _pendingConnectionCompleter!.complete(_databaseConnection);
           _pendingConnectionCompleter = null;
+          _finalizer.attach(this, _databaseConnection!, detach: this);
         }).catchError((e) {
           _pendingConnectionCompleter!.completeError(
             QueryException.transport(
@@ -138,8 +139,6 @@ class PostgreSQLPersistentStore extends PersistentStore
 
       return _pendingConnectionCompleter!.future;
     }
-
-    _finalizer.attach(this, _databaseConnection!, detach: this);
 
     return _databaseConnection!;
   }
