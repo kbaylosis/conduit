@@ -61,7 +61,10 @@ dev_dependencies:
       ref: fix/attach-finalizer-on-connect_fork
       path: packages/test_harness
   fs_test_agent:
-    path: ../fs_test_agent
+    git:
+      url: git@github.com:kbaylosis/conduit.git
+      ref: fix/attach-finalizer-on-connect_fork
+      path: packages/fs_test_agent
   http: ^0.13.0
   lint: ^2.0.0
   lints: ^2.0.1
