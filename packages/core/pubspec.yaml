@@ -2,18 +2,44 @@ name: conduit_core
 version: 4.2.0
 homepage: https://github.com/conduit-dart/conduit
 description: This is the core of the framework.
+publish_to: none
+
 environment:
   sdk: ">=2.18.6 <3.0.0"
 dependencies:
   analyzer: ^5.1.0
   args: ^2.1.1
   collection: ^1.15.0
-  conduit_common: ^4.2.0
-  conduit_config: ^4.2.0
-  conduit_isolate_exec: ^4.2.0
-  conduit_open_api: ^4.2.0
-  conduit_password_hash: ^4.2.0
-  conduit_runtime: ^4.2.0
+  conduit_common: #^4.2.0
+    git: 
+      url: git@github.com:kbaylosis/conduit.git
+      ref: fix/attach-finalizer-on-connect_fork
+      path: packages/common
+  conduit_config: #^4.2.0
+    git: 
+      url: git@github.com:kbaylosis/conduit.git
+      ref: fix/attach-finalizer-on-connect_fork
+      path: packages/config
+  conduit_isolate_exec: #^4.2.0
+    git: 
+      url: git@github.com:kbaylosis/conduit.git
+      ref: fix/attach-finalizer-on-connect_fork
+      path: packages/isolate_exe
+  conduit_open_api: #^4.2.0
+    git: 
+      url: git@github.com:kbaylosis/conduit.git
+      ref: fix/attach-finalizer-on-connect_fork
+      path: packages/open_api
+  conduit_password_hash: #^4.2.0
+    git: 
+      url: git@github.com:kbaylosis/conduit.git
+      ref: fix/attach-finalizer-on-connect_fork
+      path: packages/password_hash
+  conduit_runtime: #^4.2.0
+    git: 
+      url: git@github.com:kbaylosis/conduit.git
+      ref: fix/attach-finalizer-on-connect_fork
+      path: packages/runtime
   crypto: ^3.0.2
   io: ^1.0.3
   logging: ^1.0.0
@@ -25,9 +51,15 @@ dependencies:
   yaml: ^3.1.0
 dev_dependencies:
   conduit_common_test:
-    path: ../common_test
+    git: 
+      url: git@github.com:kbaylosis/conduit.git
+      ref: fix/attach-finalizer-on-connect_fork
+      path: packages/common_test
   conduit_test:
-    path: ../test_harness
+    git:
+      url: git@github.com:kbaylosis/conduit.git
+      ref: fix/attach-finalizer-on-connect_fork
+      path: packages/test_harness
   fs_test_agent:
     path: ../fs_test_agent
   http: ^0.13.0
