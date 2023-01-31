@@ -13,7 +13,7 @@ dependencies:
     git: 
       url: git@github.com:kbaylosis/conduit.git
       ref: fix/attach-finalizer-on-connect_fork
-      path: packages/isolate_exe
+      path: packages/isolate_exec
   io: ^1.0.3
   package_config: ^2.1.0
   path: ^1.8.0

@@ -24,7 +24,7 @@ dependencies:
     git: 
       url: git@github.com:kbaylosis/conduit.git
       ref: fix/attach-finalizer-on-connect_fork
-      path: packages/isolate_exe
+      path: packages/isolate_exec
   conduit_open_api: #^4.2.0
     git: 
       url: git@github.com:kbaylosis/conduit.git
