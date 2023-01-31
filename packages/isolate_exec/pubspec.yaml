@@ -13,6 +13,6 @@ dev_dependencies:
   test: ^1.21.6
   test_package:
     git:
-      url: git@github.com:kbaylosis/conduit.git
+      url: https://github.com/kbaylosis/conduit.git
       ref: fix/attach-finalizer-on-connect_fork
       path: packages/isolate_exec_test_packages/test_package

@@ -11,7 +11,7 @@ dependencies:
   args: ^2.0.0
   conduit_isolate_exec: #^4.2.0
     git: 
-      url: git@github.com:kbaylosis/conduit.git
+      url: https://github.com/kbaylosis/conduit.git
       ref: fix/attach-finalizer-on-connect_fork
       path: packages/isolate_exec
   io: ^1.0.3
@@ -22,7 +22,7 @@ dependencies:
 dev_dependencies:
   fs_test_agent:
     git:
-      url: git@github.com:kbaylosis/conduit.git
+      url: https://github.com/kbaylosis/conduit.git
       ref: fix/attach-finalizer-on-connect_fork
       path: packages/fs_test_agent
   lint: ^2.0.0

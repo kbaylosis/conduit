@@ -8,11 +8,11 @@ environment:
 dependencies:
   conduit_common: #^4.2.0
     git: 
-      url: git@github.com:kbaylosis/conduit.git
+      url: https://github.com/kbaylosis/conduit.git
       ref: fix/attach-finalizer-on-connect_fork
       path: packages/common
   conduit_core: #^4.2.0
     git: 
-      url: git@github.com:kbaylosis/conduit.git
+      url: https://github.com/kbaylosis/conduit.git
       ref: fix/attach-finalizer-on-connect_fork
       path: packages/core
